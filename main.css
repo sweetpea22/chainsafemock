@@ -1,0 +1,41 @@
+.footer {
+  height: 70vh;
+  background: url(/chainsafe_tiled.png);
+  background-size: 40%;
+  /* background-size: 20%;
+  background-size: 80%; */
+  filter: grayscale(10%);
+  display: flex;
+}
+
+.container {
+  margin: 5vh 0 0 0;
+  height: 100%;
+  width: 100vw;
+}
+.contact,
+.menu,
+.icons,
+.btn--wrapper {
+  background: black;
+  /* height: 60vh;
+  width: 45vh; */
+  /* margin: 2rem 2rem; */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact--text,
+.footer--link,
+.button {
+  color: white;
+  font-family: "Arial";
+  font-size: 11pt;
+}
+
+h4 {
+  color: white;
+  font-family: "Arial";
+}
