@@ -1,5 +1,5 @@
 .footer {
-  height: 70vh;
+  height: 69vh;
   background: url(/chainsafe_tiled.png);
   background-size: 40%;
   /* background-size: 20%;
@@ -12,6 +12,8 @@
   margin: 5vh 0 0 0;
   height: 100%;
   width: 100vw;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
 }
 .contact,
 .menu,
@@ -19,8 +21,8 @@
 .btn--wrapper {
   background: black;
   /* height: 60vh;
-  width: 45vh; */
-  /* margin: 2rem 2rem; */
+  width: 45vh;
+  margin: 2rem 2rem; */
   display: flex;
   flex-flow: column;
   justify-content: center;
