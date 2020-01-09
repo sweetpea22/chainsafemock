@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "AkkuratProLight";
+  src: url(/fonts/AkkuratPro-Light.otf);
+}
+
 body {
   background-color: #02122d;
 }
@@ -103,19 +108,10 @@ body {
 
 .jumbotron {
   background-color: white;
-  /* background-image: linear-gradient(
-    -190deg,
-    lightslategray 0%,
-    floralwhite 25%,
-    white 50%,
-    floralwhite 75%,
-    lightslategray 100%
-  ); */
   background-image: linear-gradient(
-    140deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.9) 20%,
-    rgba(255, 255, 255, 0.5) 40%,
+    -70deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.8) 30%,
     rgba(80, 80, 140, 0.9) 100%
   );
   position: relative;
@@ -129,8 +125,12 @@ body {
 }
 
 .jumbotron h2 {
-  text-align: center;
-  line-height: 16vw;
+  text-align: left;
+  font-family: "AkkuratProLight";
+  line-height: 6vw;
+  font-size: 42pt;
+  letter-spacing: 2.2px;
+  color: black;
 }
 
 .jumbotron .container {
@@ -142,9 +142,9 @@ body {
 .jumbotron .int-link i {
   color: white;
   opacity: 1;
-  font-size: 26pt;
-  position: static;
-  top: 50%;
+  font-size: 29pt;
+  position: relative;
+  top: 60%;
 }
 
 /* about mock */
