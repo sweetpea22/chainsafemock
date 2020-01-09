@@ -8,16 +8,80 @@
       src="https://kit.fontawesome.com/51d42eb8bf.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="main.css" />
     <!-- Latest compiled and minified CSS -->
     <title>ChainSafe Footer</title>
   </head>
   <body>
-    <section class="footer">
-      <div class="container row">
-        <div class="col contact">
-          <h4>contact</h4>
-          <p class="contact--text">
+    <div class="grid-lines">
+      <div class="grid-lines-h">
+        <div class="grid-lines__line grid-lines__line-1"></div>
+        <div class="grid-lines__line grid-lines__line-2"></div>
+        <div class="grid-lines__line grid-lines__line-3"></div>
+        <div class="grid-lines__line grid-lines__line-4"></div>
+        <div class="grid-lines__line grid-lines__line-5"></div>
+        <div class="grid-lines__line grid-lines__line-6"></div>
+        <div class="grid-lines__line grid-lines__line-7"></div>
+      </div>
+    </div>
+    <div class="grid-lines-v">
+      <div class="grid-lines__line grid-lines__line-1"></div>
+      <div class="grid-lines__line grid-lines__line-2"></div>
+      <div class="grid-lines__line grid-lines__line-3"></div>
+      <div class="grid-lines__line grid-lines__line-4"></div>
+      <div class="grid-lines__line grid-lines__line-5"></div>
+      <div class="grid-lines__line grid-lines__line-6"></div>
+      <div class="grid-lines__line grid-lines__line-7"></div>
+    </div>
+    <nav class="navbar fixed-top">
+      <a class="navbar-brand" href="#"
+        ><img class="mr-2" src="/ChainSafe_Logo.svg" alt="" />ChainSafe
+        Systems</a
+      >
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h2 class="display-4">Building the next phase of web infrastucture</h2>
+
+        <a href="#about" class="int-link">
+          <i class="fas fa-angle-down"></i>
+        </a>
+      </div>
+    </div>
+    <div id="about" class="about--wrapper">
+      <div class="w-50 row">
+        <img class="simplelogo mb-3" src="/ChainSafe_Logo.svg" alt="" />
+        <p class="text-lg-left text-wrap">
+          Lorem ipsum dolor sit amet, consectetur ad aspernatur neque. Ipsam
+          exercitationem officia corrupti!
+        </p>
+      </div>
+      <div class="w-50 row">
+        <img class="complexlogo" src="/chainsafe_complex.png" alt="" />
+        <p class="w-50 text-lg-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          architecto iste voluptate earum ut rem consectetur facere deserunt
+          expedita odio amet nobis, sequi voluptates? Dignissimos commodi
+          ducimus voluptates perferendis cupitate. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Cupiditate cum explicabo numquam facilis
+          voluptas a libero, praesentium quidem animi alias aperiam asperiores
+          temporibus quae excepturi? Aliquid cupiditate explicabo pariatur sed?
+        </p>
+      </div>
+    </div>
+    <footer class="mt-5">
+      <div class="footer-bg"></div>
+      <div class="footer-container">
+        <div class="col mt-3 contact">
+          <h4 class="mb-5 contact--header text-center">contact</h4>
+          <p class="contact--text text-center">
             ChainSafe Systems,<br />
             251 Spadina Ave,<br />
             Toronto, ON M5T 2E2
@@ -29,21 +93,26 @@
           </p>
         </div>
 
-        <div class="col menu">
-          <h4>menu</h4>
+        <div class="col mt-3 menu text-center">
+          <h4 class="text-center mb-5">menu</h4>
           <a href="#about" class="footer--link">About</a>
           <a href="#clients" class="footer--link">Clients</a>
           <a href="#project" class="footer--link">Projects</a>
+          <a href="#project" class="footer--link">Projects</a>
+          <a href="#project" class="footer--link">Careers</a>
         </div>
 
-        <div class="col icons">
+        <div class="col w-50 icons">
           <a
             href="https://github.com/ChainSafe"
             target="_blank"
             class="footer--link"
             ><i class="fab fa-github"></i>
           </a>
-          <a target="_blank" class="footer--link"
+          <a
+            href="https://facebook.com/chainsafe"
+            target="_blank"
+            class="footer--link"
             ><i class="fab fa-facebook"></i>
           </a>
           <a
@@ -64,14 +133,20 @@
             class="footer--link"
             ><i class="fab fa-medium-m"></i>
           </a>
-          <a class="button" href="./ChainSafe-Presskit.zip">Press Kit</a>
+          <hr />
+        </div>
+        <!-- <button class="btn btn-sm">
+          <a class="btn__presskit" href="./ChainSafe-Presskit.zip">Press Kit</a>
+        </button>
+        <button class="btn btn-sm">
           <a
             href="https://etherscan.io/address/0x0C60C6ab49DC7A0EC91B6Bc856B753aFA072b375"
-            class="button"
+            class="btn__support"
             >Support ChainSafe</a
           >
-        </div>
+        </button> -->
       </div>
-    </section>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>

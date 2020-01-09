@@ -1,43 +1,254 @@
-.footer {
-  height: 69vh;
-  background: url(/chainsafe_tiled.png);
-  background-size: 40%;
-  /* background-size: 20%;
-  background-size: 80%; */
-  filter: grayscale(10%);
-  display: flex;
+body {
+  background-color: #02122d;
+}
+
+/* gridlines */
+
+.grid-lines {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #02122d;
+  pointer-events: none;
+}
+
+.grid-lines-h {
+  height: 100vh;
+}
+
+.grid-lines-h .grid-lines__line {
+  width: 100%;
+  height: 1px;
+  opacity: 0.4;
+  color: #fff;
+  position: absolute;
+  background-image: linear-gradient(
+    180deg,
+    #00236d 0%,
+    #1d3ec9 25%,
+    #00236d 50%,
+    #1d3ec9 100%
+  );
+}
+
+.grid-lines-v .grid-lines__line {
+  height: 100%;
+  width: 1px;
+  opacity: 0.4;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(
+    90deg,
+    #00236d 0%,
+    #1d3ec9 25%,
+    #00236d 50%,
+    #1d3ec9 100%
+  );
+}
+
+.grid-lines-h .grid-lines__line-2 {
+  top: 30vh;
+}
+
+.grid-lines-h .grid-lines__line-3 {
+  top: 60vh;
+}
+
+.grid-lines-h .grid-lines__line-4 {
+  top: 90vh;
+}
+.grid-lines-h .grid-lines__line-5 {
+  top: 120vh;
+}
+
+.grid-lines-v .grid-lines__line-2 {
+  left: 30vh;
+}
+.grid-lines-v .grid-lines__line-3 {
+  left: 60vh;
+}
+
+.grid-lines-v .grid-lines__line-4 {
+  left: 90vh;
+}
+
+.grid-lines-v .grid-lines__line-5 {
+  left: 120vh;
+}
+
+.grid-lines-v .grid-lines__line-6 {
+  left: 150vh;
+}
+
+.grid-lines-v .grid-lines__line-7 {
+  left: 180vh;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: 200;
+}
+
+.navbar {
+  height: 40px;
+}
+
+.jumbotron {
+  background-color: white;
+  /* background-image: linear-gradient(
+    -190deg,
+    lightslategray 0%,
+    floralwhite 25%,
+    white 50%,
+    floralwhite 75%,
+    lightslategray 100%
+  ); */
+  background-image: linear-gradient(
+    140deg,
+    rgba(80, 80, 120, 0.3) 0%,
+    /* rgba(255, 255, 255, 1) 0%, */ rgba(255, 255, 255, 0.9) 20%,
+    rgba(255, 255, 255, 0.5) 40%,
+    rgba(50, 50, 140, 0.9) 100%
+  );
+  position: relative;
+  z-index: 3;
+  width: 90vw;
+  height: 30vw;
+  opacity: 0.75;
+  margin: 20vh auto 0 auto;
+  border-radius: 6px;
+  box-shadow: 10px 20px 8px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h2 {
+  text-align: center;
+  line-height: 10vw;
 }
 
 .container {
-  margin: 5vh 0 0 0;
-  height: 100%;
-  width: 100vw;
-  /* display: flex; */
-  /* justify-content: space-evenly; */
-}
-.contact,
-.menu,
-.icons,
-.btn--wrapper {
-  background: black;
-  /* height: 60vh;
-  width: 45vh;
-  margin: 2rem 2rem; */
   display: flex;
   flex-flow: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
+}
+.int-link {
+  position: relative;
+  top: 40%;
+  left: 0;
+  z-index: 4;
 }
 
-.contact--text,
-.footer--link,
-.button {
+.jumbotron .int-link i {
+  color: white;
+  opacity: 1;
+  font-size: 26pt;
+}
+
+/* about mock */
+
+.about--wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  position: relative;
+  margin: 20vh 0 0 10vh;
+  z-index: 3;
+}
+
+.simplelogo {
+  max-width: 200px;
+  max-height: 150px;
+}
+
+.complexlogo {
+  max-width: 220px;
+  max-height: 175px;
+}
+
+.about--wrapper p {
+  width: 30vw;
+  color: white;
+}
+
+/* footer */
+.footer-bg {
+  height: 40vh;
+  width: 100vw;
+  /* background-size: 40%; */
+  /* background-size: 80%; */
+  background: url(/chainsafe_tiled.png);
+  background-size: 20%;
+  position: relative;
+  bottom: 0;
+  z-index: 3;
+}
+
+.footer-container {
+  height: 39.7vh;
+  width: 100vw;
+  background-color: black;
+  position: absolute;
+  top: 159%;
+  z-index: 10;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contact,
+.menu {
+  display: flex;
+  flex-flow: column;
+  width: 100px;
+}
+
+footer h4 {
+  font-size: 12pt;
+  letter-spacing: 1px;
+  margin: 2vh 0 0 0;
+  color: white;
+}
+
+.contact--text {
   color: white;
   font-family: "Arial";
   font-size: 11pt;
+  margin: 3vh 0 0 0 3vh;
 }
 
-h4 {
+.footer--link {
+  margin-bottom: 4px;
+  font-size: 11pt;
   color: white;
-  font-family: "Arial";
+}
+.icons {
+  display: flex;
+  justify-items: center;
+  margin: 10vh 0 0 0;
+  flex-flow: row wrap;
+}
+
+.icons a .fab {
+  margin: 0 0 0 2rem;
+  font-size: 20pt;
+  color: white;
+}
+
+button {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90px;
+  height: 100px;
+}
+
+.btn__presskit {
+  position: relative;
+  left: -50%;
 }
