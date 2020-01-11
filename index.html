@@ -17,56 +17,36 @@
     />
     <link rel="stylesheet" href="main.css" />
     <!-- Latest compiled and minified CSS -->
+    <!-- class="jumbotron jumbotron-fluid" -->
     <title>ChainSafe Footer</title>
   </head>
   <body>
-    <div class="grid-lines">
-      <div class="grid-lines-h">
-        <div class="grid-lines__line grid-lines__line-1"></div>
-        <div class="grid-lines__line grid-lines__line-2"></div>
-        <div class="grid-lines__line grid-lines__line-3"></div>
-        <div class="grid-lines__line grid-lines__line-4"></div>
-        <div class="grid-lines__line grid-lines__line-5"></div>
-        <div class="grid-lines__line grid-lines__line-6"></div>
-        <div class="grid-lines__line grid-lines__line-7"></div>
-      </div>
-    </div>
-    <div class="grid-lines-v">
-      <div class="grid-lines__line grid-lines__line-1"></div>
-      <div class="grid-lines__line grid-lines__line-2"></div>
-      <div class="grid-lines__line grid-lines__line-3"></div>
-      <div class="grid-lines__line grid-lines__line-4"></div>
-      <div class="grid-lines__line grid-lines__line-5"></div>
-      <div class="grid-lines__line grid-lines__line-6"></div>
-      <div class="grid-lines__line grid-lines__line-7"></div>
-    </div>
     <nav class="navbar fixed-top">
       <a class="navbar-brand" href="#"
         ><img class="mr-2" src="/ChainSafe_Logo.svg" alt="" />ChainSafe
         Systems</a
       >
     </nav>
-    <!-- class="jumbotron jumbotron-fluid" -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h2>Building the next phase of web infrastructure</h2>
-
+        <img src="header.png" alt="" class="" />
         <a href="#about" class="int-link">
           <i class="fas fa-angle-down"></i>
         </a>
       </div>
     </div>
-    <div id="about" class="about--wrapper">
-      <div class="w-50 row">
+    <div id="about" class="row-col-2  container about--wrapper">
+      <div class="col-lg-5">
         <img class="simplelogo mb-3" src="/ChainSafe_Logo.svg" alt="" />
         <p class="text-lg-left text-wrap">
           Lorem ipsum dolor sit amet, consectetur ad aspernatur neque. Ipsam
           exercitationem officia corrupti!
         </p>
       </div>
-      <div class="w-50 row">
-        <img class="complexlogo" src="/chainsafe_complex.png" alt="" />
-        <p class="w-50 text-lg-left">
+      <div class="col-lg-5 col-sm-12">
+        <img class="complexlogo col-lg-3" src="/chainsafe_complex.png" alt="" />
+        <p class="text-lg-left col-lg-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
           architecto iste voluptate earum ut rem consectetur facere deserunt
           expedita odio amet nobis, sequi voluptates? Dignissimos commodi
@@ -79,10 +59,50 @@
     </div>
     <footer class="mt-5">
       <div class="footer-bg"></div>
-      <div class="footer-container">
-        <div class="col-4 mt-5 logo">
-          <img class="ml-4 footer__logo" src="/ChainSafe_Logo.svg" alt="" />
-          <div class="col icons">
+      <div class="footer-container container-fluid">
+        <div class="col-lg-2 text-center mt-4 menu">
+          <h4 class=" mb-4">menu</h4>
+          <a href="#about" class="footer--link">About</a>
+          <a href="#clients" class="footer--link">Clients</a>
+          <a href="#project" class="footer--link">Projects</a>
+        </div>
+        <div class="col-lg-2 text-center mt-4 resources">
+          <h4 class="text-lg-justify mb-4">resources</h4>
+          <a class="footer--link" href="./ChainSafe-Presskit.zip">Press Kit</a>
+          <br />
+          <a
+            class="footer--link"
+            href="https://etherscan.io/address/0x0C60C6ab49DC7A0EC91B6Bc856B753aFA072b375"
+            >Donate</a
+          >
+          <br />
+          <a
+            class="footer--link"
+            href="https://etherscan.io/address/0x0C60C6ab49DC7A0EC91B6Bc856B753aFA072b375"
+            >Blog</a
+          >
+        </div>
+        <div class="col-lg-3 mt-4 contact">
+          <h4 class="mb-4 contact--header text-center">
+            contact
+          </h4>
+          <p class="contact--text text-center">
+            ChainSafe Systems,<br />
+            251 Spadina Ave,<br />
+            Toronto, ON M5T 2E2
+            <br /><br />
+            (416) 938-0799<br />
+            <a class="footer--link" href="mailto:info@chainsafe.io"
+              >info@chainsafe.io</a
+            >
+          </p>
+        </div>
+        <div class="col-lg-4 mt-3 logo">
+          <img class="col ml-4 footer__logo" src="/ChainSafe_Logo.svg" alt="" />
+          <p class="text-center text-lg-left footer__desc">
+            Tagline that is justifiably optimistic rather than stupidly bullish.
+          </p>
+          <div class="ml-4 icons">
             <a
               href="https://github.com/ChainSafe"
               target="_blank"
@@ -114,45 +134,13 @@
               ><i class="fab fa-medium-m"></i>
             </a>
           </div>
-          <p class="footer__desc">
-            Tagline that is justifiably optimistic rather than stupidly bullish.
-          </p>
         </div>
-
-        <div class="ml-5 col-3 mt-5 contact">
-          <h4 class="mb-4 contact--header text-justify">contact</h4>
-          <p class="contact--text text-justify">
-            ChainSafe Systems,<br />
-            251 Spadina Ave,<br />
-            Toronto, ON M5T 2E2
-            <br /><br />
-            (416) 938-0799<br />
-            <a class="footer--link" href="mailto:info@chainsafe.io"
-              >info@chainsafe.io</a
-            >
-          </p>
-        </div>
-
-        <div class="col-2 mt-5 menu text-justify">
-          <h4 class="text-justify mb-4">menu</h4>
-          <a href="#about" class="footer--link">About</a>
-          <a href="#clients" class="footer--link">Clients</a>
-          <a href="#project" class="footer--link">Projects</a>
-          <a href="#project" class="footer--link">Projects</a>
-          <a href="#project" class="footer--link">Careers</a>
-        </div>
-        <!-- <button class="btn btn-sm">
-          <a class="btn__presskit" href="./ChainSafe-Presskit.zip">Press Kit</a>
-        </button>
-        <button class="btn btn-sm">
-          <a
-            href="https://etherscan.io/address/0x0C60C6ab49DC7A0EC91B6Bc856B753aFA072b375"
-            class="btn__support"
-            >Support ChainSafe</a
-          >
-        </button> -->
+      </div>
+      <div class="imprint">
+        <p>© 2020 ChainSafe Systems — All Rights Reserved</p>
       </div>
     </footer>
+
     <script src="main.js"></script>
   </body>
 </html>

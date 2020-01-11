@@ -4,92 +4,7 @@
 }
 
 body {
-  background-color: #02122d;
-}
-
-/* gridlines */
-
-.grid-lines {
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: #02122d;
-  pointer-events: none;
-}
-
-.grid-lines-h {
-  height: 100vh;
-}
-
-.grid-lines-h .grid-lines__line {
-  width: 100vw;
-  height: 1px;
-  opacity: 0.4;
-  color: #fff;
-  position: absolute;
-  background-image: linear-gradient(
-    180deg,
-    #00236d 0%,
-    #1d3ec9 25%,
-    #00236d 50%,
-    #1d3ec9 100%
-  );
-}
-
-.grid-lines-v .grid-lines__line {
-  height: 100vh;
-  width: 1px;
-  opacity: 0.4;
-  color: #fff;
-  position: absolute;
-  z-index: 1;
-  background-image: linear-gradient(
-    90deg,
-    #00236d 0%,
-    #1d3ec9 25%,
-    #00236d 50%,
-    #1d3ec9 100%
-  );
-}
-
-.grid-lines-h .grid-lines__line-2 {
-  top: 30vh;
-}
-
-.grid-lines-h .grid-lines__line-3 {
-  top: 60vh;
-}
-
-.grid-lines-h .grid-lines__line-4 {
-  top: 90vh;
-}
-.grid-lines-h .grid-lines__line-5 {
-  top: 120vh;
-}
-
-.grid-lines-v .grid-lines__line-2 {
-  left: 30vh;
-}
-.grid-lines-v .grid-lines__line-3 {
-  left: 60vh;
-}
-
-.grid-lines-v .grid-lines__line-4 {
-  left: 90vh;
-}
-
-.grid-lines-v .grid-lines__line-5 {
-  left: 120vh;
-}
-
-.grid-lines-v .grid-lines__line-6 {
-  left: 150vh;
-}
-
-.grid-lines-v .grid-lines__line-7 {
-  left: 180vh;
+  background-color: black;
 }
 
 .navbar-brand img {
@@ -107,18 +22,12 @@ body {
 }
 
 .jumbotron {
-  background-color: white;
-  background-image: linear-gradient(
-    -70deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.8) 30%,
-    rgba(80, 80, 140, 0.9) 100%
-  );
+  background-color: #2d2d2d;
   position: relative;
   z-index: 5;
   width: 90vw;
   height: 30vw;
-  opacity: 0.75;
+  opacity: 0.8;
   margin: 20vh auto 0 auto;
   border-radius: 6px;
   box-shadow: 10px 20px 8px rgba(0, 0, 0, 0.5);
@@ -128,9 +37,11 @@ body {
   text-align: left;
   font-family: "AkkuratProLight";
   line-height: 6vw;
-  font-size: 42pt;
+  font-size: 40pt;
   letter-spacing: 2.2px;
-  color: black;
+  color: yellow;
+  position: static;
+  z-index: 10;
 }
 
 .jumbotron .container {
@@ -139,6 +50,13 @@ body {
   align-items: center;
 }
 
+.jumbotron .container img {
+  height: 350px;
+  width: 400px;
+  position: absolute;
+  top: 8%;
+  margin-left: 28%;
+}
 .jumbotron .int-link i {
   color: white;
   opacity: 1;
@@ -151,11 +69,13 @@ body {
 
 .about--wrapper {
   display: flex;
+  background: #2a2727;
   flex-flow: row wrap;
   justify-content: space-evenly;
   position: relative;
-  margin: 20vh 0 0 10vh;
+  margin: 20vh auto 0 auto;
   z-index: 3;
+  flex-basis: 1 0 100%;
 }
 
 .simplelogo {
@@ -169,29 +89,24 @@ body {
 }
 
 .about--wrapper p {
-  width: 30vw;
+  max-width: 100%;
   color: white;
 }
 
 /* footer */
-.footer-bg {
+/* .footer-bg {
   height: 40vh;
   width: 100vw;
-  /* background-size: 40%; */
-  /* background-size: 80%; */
   background: url(/chainsafe_tiled.png);
   background-size: 20%;
-  position: relative;
+  position: absolute;
   bottom: 0;
   z-index: 3;
-}
+} */
 
 .footer-container {
-  height: 39.7vh;
-  width: 100vw;
-  background-color: black;
-  position: absolute;
-  top: 159%;
+  height: 40vh;
+  background-color: red;
   z-index: 10;
   display: flex;
   flex-flow: row wrap;
@@ -200,7 +115,18 @@ body {
 .contact,
 .menu {
   display: flex;
-  flex-flow: column;
+  flex: 1 1 200px;
+  max-width: 100%;
+  flex-flow: column wrap;
+}
+
+.logo {
+  display: flex;
+  flex: 1 1 100vw;
+  flex-flow: wrap;
+}
+.menu a {
+  text-align: center;
 }
 
 footer h4 {
@@ -223,13 +149,11 @@ footer h4 {
   color: white;
 }
 .icons {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 8vh 0 0 1vh;
+  margin: 8vh 0 0 auto;
 }
 
 .icons a .fab {
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 1.5rem;
   font-size: 18pt;
   color: white;
 }
@@ -239,21 +163,6 @@ footer h4 {
   transition: all 0.2s ease;
 }
 
-button {
-  display: flex;
-  flex-flow: row wrap;
-  width: 90px;
-  height: 100px;
-}
-
-.btn__presskit {
-  position: relative;
-  left: -50%;
-}
-
-.footer .logo {
-  width: 10%;
-}
 .footer__logo {
   width: 90px;
   height: 60px;
