@@ -67,6 +67,10 @@ body {
 
 /* about mock */
 
+.hidden {
+  display: none;
+}
+
 .about--wrapper {
   display: flex;
   background: #2a2727;
