@@ -2,10 +2,18 @@
   font-family: "AkkuratProLight";
   src: url(/fonts/AkkuratPro-Light.otf);
 }
-/*  secondary yellow
+@font-face {
+  font-family: "AkkuratProBold";
+  src: url(/fonts/AkkuratPro-Bold.otf);
+}
+/*  secondary shade yellow
 #F7EB22
 lighter yellow
-#FFFD7A */
+#FFFD7A
+brighter yellow
+#FEF223
+
+*/
 
 body {
   background-color: black;
@@ -35,12 +43,11 @@ h5 {
 }
 
 .jumbotron {
-  background-color: #2d2d2d;
+  background-color: darkgray;
   position: relative;
   z-index: 5;
   width: 90vw;
-  height: 30vw;
-  opacity: 0.8;
+  height: 70vh;
   margin: 20vh auto 0 auto;
   border-radius: 6px;
   box-shadow: 10px 20px 8px rgba(0, 0, 0, 0.5);
@@ -48,11 +55,11 @@ h5 {
 
 .jumbotron h2 {
   text-align: left;
-  font-family: "AkkuratProLight";
+  font-family: "AkkuratProBold";
   line-height: 6vw;
-  font-size: 40pt;
-  letter-spacing: 2.2px;
-  color: yellow;
+  font-size: 40px;
+  letter-spacing: 1.7px;
+  color: #fef223;
   position: static;
   z-index: 10;
 }
@@ -60,7 +67,6 @@ h5 {
 .jumbotron .container {
   display: flex;
   flex-flow: column;
-  align-items: center;
 }
 
 .jumbotron .container img {
@@ -70,12 +76,30 @@ h5 {
   top: 8%;
   margin-left: 28%;
 }
-.jumbotron .int-link i {
-  color: white;
-  opacity: 1;
-  font-size: 29pt;
-  position: relative;
-  top: 60%;
+
+.int-link {
+  text-decoration: none;
+}
+
+.int-link:hover {
+  text-decoration: none;
+}
+
+.header__coa {
+  width: 280px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #fef223;
+  font-size: 23px;
+  color: black;
+  letter-spacing: 1.1px;
+  text-align: center;
+  line-height: 80px;
+  font-family: "AkkuratProBold";
+}
+
+.int-link .header__coa:hover {
+  background-color: #f7eb22;
 }
 
 /* about mock */
@@ -86,13 +110,14 @@ h5 {
 
 .about--wrapper {
   display: flex;
-  background: #2a2727;
+  background: black;
   flex-flow: row wrap;
   justify-content: space-evenly;
   position: relative;
   margin: 20vh auto 0 auto;
   z-index: 3;
   flex-basis: 1 0 100%;
+  padding-bottom: 100px;
 }
 
 .simplelogo {
