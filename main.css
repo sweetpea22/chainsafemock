@@ -209,6 +209,8 @@ h5 {
 .projects {
   margin: 0;
   height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .projects__card {
@@ -218,7 +220,7 @@ h5 {
 }
 
 .card {
-  margin: 5vh 0 0 5vw;
+  margin: 40vh 0 0 5vw;
   width: 19rem;
   height: 20rem;
   border-radius: 7px;
@@ -237,8 +239,29 @@ h5 {
   color: #e6d72f;
 }
 
+.card-title-alt {
+  color: black;
+  font-family: "AkkuratProReg";
+  font-size: 21pt;
+  letter-spacing: 1.4px;
+}
 .card-text {
   color: lightgray;
+}
+
+.card-alt {
+  margin: 10vh 0 0 20vw;
+  width: 29rem;
+  height: 17rem;
+  border-radius: 7px;
+  background: lightgray;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: 10;
 }
 
 /* clients */
