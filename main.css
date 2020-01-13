@@ -2,9 +2,22 @@
   font-family: "AkkuratProLight";
   src: url(/fonts/AkkuratPro-Light.otf);
 }
+/*  secondary yellow
+#F7EB22
+lighter yellow
+#FFFD7A */
 
 body {
   background-color: black;
+}
+
+h5 {
+  color: #171718;
+  font-family: "OpenSansSemiBold";
+  letter-spacing: 1.5px;
+  font-size: 19pt;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .navbar-brand img {
@@ -97,7 +110,51 @@ body {
   color: white;
 }
 
+/* clients */
+
+.clients .client-logos {
+  padding-top: 2vh;
+}
+
+.support,
+.clients {
+  padding-top: 5vh;
+  height: 60vh;
+}
+
+.clients h5 {
+  color: white;
+}
+
+.support {
+  background-color: white;
+}
+
+.client-logos,
+.supporter-logos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.supporter-logos img,
+.client-logos img {
+  margin: 10vh 1rem 0 1.5rem;
+  max-height: 110px;
+  width: auto;
+}
+
+.client-logos img {
+  height: 8vh;
+}
+
+.supporter-logos img .logo--filecoin {
+  height: 80px;
+}
+
 /* footer */
+
 /* .footer-bg {
   height: 40vh;
   width: 100vw;
@@ -110,7 +167,7 @@ body {
 
 .footer-container {
   height: 40vh;
-  background-color: red;
+  background-color: black;
   z-index: 10;
   display: flex;
   flex-flow: row wrap;
@@ -128,6 +185,7 @@ body {
   display: flex;
   flex: 1 1 100vw;
   flex-flow: wrap;
+  order: -1;
 }
 .menu a {
   text-align: center;
@@ -152,6 +210,7 @@ footer h4 {
   font-size: 11pt;
   color: white;
 }
+
 .icons {
   margin: 8vh 0 0 auto;
 }
