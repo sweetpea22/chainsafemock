@@ -42,16 +42,16 @@
       </div>
     </div>
     <div id="about" class="row-col-2  container about--wrapper">
-      <div class="col-lg-5">
+      <div class="col-lg-5 col-md-6 col-sm-12">
         <img class="simplelogo mb-3" src="/ChainSafe_Logo.svg" alt="" />
-        <p class="text-lg-left text-wrap">
+        <p class="text-lg-left text-center text-wrap">
           Lorem ipsum dolor sit amet, consectetur ad aspernatur neque. Ipsam
           exercitationem officia corrupti!
         </p>
       </div>
-      <div class="col-lg-5 col-sm-12">
+      <div class="col-lg-5  col-md-6 col-sm-12">
         <img class="complexlogo col-lg-3" src="/chainsafe_complex.png" alt="" />
-        <p class="text-lg-left col-lg-3">
+        <p class="text-lg-left text-center col-lg-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
           architecto iste voluptate earum ut rem consectetur facere deserunt
           expedita odio amet nobis, sequi voluptates? Dignissimos commodi
@@ -62,11 +62,11 @@
         </p>
       </div>
     </div>
-    <section id="support" class="section support container-fluid">
-      <div class="text-lg-center row">
-        <h5 class="">Our open source R&D is supported by</h5>
+    <section id="support" class="support container-fluid">
+      <div class="text-center row mt-4">
+        <h5 class="support__header">Our open-source R&D is supported by</h5>
       </div>
-      <div class="row supporter-logos">
+      <div class="row col-sm-12 supporter__logos mt-4">
         <a target="_blank" href="https://ethereum.org"
           ><img src="./assets/images/grants/eth.png"
         /></a>
@@ -89,9 +89,11 @@
     </section>
     <section id="clients" class="section clients container-fluid">
       <div class="row subheader">
-        <h5 class="client--header white">Current and former clients</h5>
+        <h5 class="mt-4 client__header white">
+          Developers and Applications that trust ChainSafe
+        </h5>
       </div>
-      <div class="row col-lg-12 col-md-8 client-logos">
+      <div class="row col-12 client__logos">
         <img src="./assets/images/client_logos/bunz.png" alt="Bunz" />
         <img src="./assets/images/client_logos/etc-labs.png" alt="etc-labs" />
         <img
@@ -99,7 +101,11 @@
           alt="Whiteblock"
         />
         <img src="./assets/images/client_logos/polymath.png" alt="Polymath" />
-        <img src="./assets/images/client_logos/aion.png" alt="Aion" />
+        <img
+          class="aion"
+          src="./assets/images/client_logos/aion.png"
+          alt="Aion"
+        />
         <img
           src="./assets/images/client_logos/george-brown.png"
           alt="George Brown"
@@ -188,9 +194,9 @@
           </div>
         </div>
       </div>
-      <div class="imprint">
+      <!-- <div class="imprint">
         <p>© 2020 ChainSafe Systems — All Rights Reserved</p>
-      </div>
+      </div> -->
     </footer>
 
     <script src="main.js"></script>
