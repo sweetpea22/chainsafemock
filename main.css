@@ -70,8 +70,8 @@ h5 {
   font-size: 40px;
   letter-spacing: 1.9px;
   color: #fef223;
-  position: static;
-  z-index: 10;
+  position: relative;
+  z-index: 14;
   max-width: 50vw;
 }
 
@@ -82,11 +82,11 @@ h5 {
 }
 
 .jumbotron .container img {
-  height: 575px;
-  width: 625px;
+  height: 510px;
+  width: 630px;
   position: absolute;
-  top: 2%;
-  margin-left: 29%;
+  top: 3%;
+  margin-left: 35vw;
 }
 
 .header__link,
@@ -136,8 +136,9 @@ h5 {
 
 /* about mock */
 
-.hidden {
-  display: none;
+#about {
+  height: 10vh;
+  background: transparent;
 }
 
 .about--wrapper {
@@ -174,65 +175,42 @@ h5 {
 /* work */
 .work {
   background-color: #21201c;
-  /* background-color: white; */
-  /* #1a180f; */
-  height: 100vh;
+  height: auto;
   width: 100vw;
+  padding: 5vh 0 14vh 0;
 }
 
 .work .container {
-  height: 13vh;
   display: flex;
   flex-flow: column wrap;
 }
 
 .work h2 {
-  color: lightgray;
+  color: white;
   font-family: "AkkuratProReg";
   letter-spacing: 1.2px;
-  margin: 4vh 0 0 0;
+  margin: 2vh 0 0 0;
 }
 
 .projects {
-  margin: 0;
-  height: 100vh;
   display: flex;
   max-width: 100vw;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
 
-.projects__card {
-  width: 40vw;
-  background: darkslategray;
-  border-radius: 6px;
+.work__card {
+  margin: 3vh 0 0 2vw;
+  padding: 3px;
+  width: 22rem;
+  height: auto;
+  border-radius: 14px;
+  background: black;
+  background-image: linear-gradient(180deg, #ffff13 0%, #d8be2f 100%);
+  box-shadow: 2px 9px 11px 6px black;
 }
 
-.card {
-  margin: 40vh 0 0 5vw;
-  width: 8rem;
-  height: 12rem;
-  border-radius: 7px;
-  background: #262521;
-  box-shadow: -0.1em 0.2em 20px #12110f;
-  transition: all ease 0.4s;
-}
-
-.card:hover {
-  transform: rotateX(0) rotateY(-16deg) rotateZ(0);
-}
-.card-title {
-  font-family: "AkkuratProReg";
-  font-size: 21pt;
-  letter-spacing: 1.4px;
-  color: #e6d72f;
-}
-
-.card-subtitle {
-  font-size: 15pt;
-}
-
-.card-title-alt {
+.work__card--title {
   color: black;
   padding: 1rem;
   border-radius: 9px;
@@ -242,7 +220,7 @@ h5 {
   transition: all 0.4s ease;
 }
 
-.card-title-alt:hover {
+.work__card--title:hover {
   transform: scale(0.9);
 }
 
@@ -250,17 +228,7 @@ h5 {
   color: lightgray;
 }
 
-.card-alt {
-  margin: 40vh 0 0 2vw;
-  padding: 1rem;
-  width: 24rem;
-  height: 18rem;
-  border-radius: 14px;
-  background: black;
-  background-image: linear-gradient(180deg, #ffff13 0%, #d8be2f 100%);
-}
-
-.card-alt a {
+.work__card a {
   display: flex;
   flex-flow: column nowrap;
   text-decoration: none;
@@ -268,16 +236,16 @@ h5 {
 
 .work__accent {
   width: 100%;
-  height: 1.4px;
+  height: 1.2px;
   background-color: black;
   position: relative;
   z-index: 10;
-  margin: 0vh 0 0 0;
+  margin: 0 0 2vh 0;
   border-radius: 10px;
   transition: all 0.4s ease;
 }
 
-.card-alt:hover .work__accent {
+.work__card:hover .work__accent {
   width: 50%;
   transform: translateX(5rem);
 }
@@ -316,9 +284,9 @@ img {
 
 .client__header,
 .support__header {
-  font-family: "AkkuratProReg";
+  font-family: "AkkuratProBold";
   font-size: 21pt;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.5px;
 }
 
 .clients h5 {
@@ -356,15 +324,6 @@ footer {
   z-index: 10;
   height: 40vh;
 }
-/* .footer-bg {
-  height: 40vh;
-  width: 100vw;
-  background: url(/chainsafe_tiled.png);
-  background-size: 20%;
-  position: absolute;
-  bottom: 0;
-  z-index: 3;
-} */
 
 .footer-container {
   background-color: #11100d;
@@ -503,11 +462,30 @@ footer h4 {
     justify-content: center;
   }
   .simplelogo {
-    margin: 0 0 0 14vw;
+    margin: 0.5vh 0 0 14vw;
     height: 110px;
   }
   .complexlogo {
+    height: 140px;
     margin: 0 0 0 10vw;
+  }
+  .projects .row {
+    margin: 2vh 0 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .work__card {
+    margin: 2vh 0 0 0;
+    padding: 0.25rem;
+    width: 25rem;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .work__card {
+    margin: 2vh 0 0 4vw;
   }
 }
 
@@ -551,6 +529,21 @@ footer h4 {
     margin: 0 0 0 15vw;
     max-width: 200px;
     max-height: 165px;
+  }
+  .projects {
+    margin: 8vh 0 0 0;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .projects .row {
+    height: 20%;
+    margin: 4vh 0 5vh 0;
+  }
+  .work__card {
+    margin: 2vh 0 0 0;
+    padding: 0.5rem;
+    width: auto;
+    height: auto;
   }
 }
 

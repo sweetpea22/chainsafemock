@@ -3,7 +3,6 @@
 // const headerArrow = document.querySelector('.fa-angle-down');
 // const aboutLogos = document.querySelector('.about--wrapper').children
 
-
 // window.onscroll = function () { myFunction() };
 
 // function myFunction() {
@@ -28,3 +27,8 @@
 //     y: 20
 // })
 
+const header_btn = document.querySelector('.header__coa');
+
+// header_btn.addEventListener('click', () => {
+
+// });

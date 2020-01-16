@@ -7,6 +7,7 @@
     <script
       src="https://kit.fontawesome.com/51d42eb8bf.js"
       crossorigin="anonymous"
+      SameSite="none"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
     <link
@@ -41,7 +42,8 @@
         </a>
       </div>
     </div>
-    <section id="about" class="row-col-2  container about--wrapper">
+    <div id="about"></div>
+    <section class="row-col-2  container about--wrapper">
       <div class="mt-2 col-lg-5 col-md-6 col-sm-12">
         <img class="simplelogo mb-3" src="/ChainSafe_Logo.svg" alt="" />
         <p class="text-lg-left text-center text-wrap">
@@ -62,9 +64,13 @@
     </section>
     <section class="work">
       <div class="work__header--wrapper container">
-        <h2 class="text-center text-lg-left">Proudly Contributing To</h2>
+        <h2 class="text-center text-xl-left mt-2">
+          Our Latest Projects
+        </h2>
       </div>
-      <div class="projects container"></div>
+      <div class="projects container">
+        <div class="row col-12"></div>
+      </div>
     </section>
     <section id="support" class="support container-fluid">
       <div class="text-center row mt-4">
@@ -162,7 +168,7 @@
         <div class="col-lg-4 mt-3 logo">
           <img class="col ml-4 footer__logo" src="/ChainSafe_Logo.svg" alt="" />
           <p class="text-center text-lg-left footer__desc">
-            Tagline that is justifiably optimistic rather than stupidly bullish.
+            Builders of intuitive, user-centric blockchain solutions.
           </p>
           <div class="ml-4 icons">
             <a
@@ -198,12 +204,14 @@
           </div>
         </div>
       </div>
-      <!-- <div class="imprint">
-        <p>© 2020 ChainSafe Systems — All Rights Reserved</p>
-      </div> -->
     </footer>
     <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script
+      sameSite="none"
+      async
+      defer
+      src="https://buttons.github.io/buttons.js"
+    ></script>
     <script src="demo.js"></script>
   </body>
 </html>
