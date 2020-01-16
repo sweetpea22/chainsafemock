@@ -545,6 +545,10 @@ footer h4 {
     width: auto;
     height: auto;
   }
+  #about {
+    height: 1vh;
+    background: transparent;
+  }
 }
 
 @media only screen and (max-width: 340px) {

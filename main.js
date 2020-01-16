@@ -15,19 +15,14 @@
 //     }
 // }
 
-// // TweenMax.from([simpleLogo, complexLogo], 1.2, {
-// //     opacity: 0,
-// //     y: -30,
-// //     delay: 1.1,
-// //     ease: Expo.easeInOut
-// // })
+
 
 // TweenMax.to(headerArrow, .4, {
 //     repeat: 2,
 //     y: 20
 // })
 
-const header_btn = document.querySelector('.header__coa');
+// const header_btn = document.querySelector('.header__coa');
 
 // header_btn.addEventListener('click', () => {
 
