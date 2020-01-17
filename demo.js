@@ -38,25 +38,27 @@ getPinnedRepos()
 
 // animations // 
 
-const aboutPage = document.querySelector('#about');
-const headerButton = document.querySelector('.header__coa');
-const content = document.querySelector('body');
+const aboutPage = document.querySelector('.about--wrapper'),
+  headerButton = document.querySelector('.header__coa'),
+  aboutColumns = document.querySelectorAll('.about_col'),
+  projectsPage = document.querySelectorAll('.projects.row'),
+  projectsCards = document.querySelectorAll('.work__card');
 
-const fadeInOnScroll = () => {
-  const scrolledToSection = (this.scrollHeight - this.scrollTop) === this.clientHeight;
-  if (scrolledToSection) {
 
+// aboutPage.offsetHeight
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  if (scrolled >= (headerButton.offsetHeight)) {
+    aboutColumns.forEach(col => {
+      col.classList.add('fadeInOnScroll');
+    })
+  } else if (scrolled >= projectsPage.offsetHeight) {
+    projectsCards.forEach(card => {
+      card.classList.add('fadeInOnScroll');
+    })
   }
-  // fadeup 
-  TweenMax.from([simpleLogo, complexLogo], 1.2, {
-    opacity: 0,
-    y: -30,
-    delay: 1.1,
-    ease: Expo.easeInOut
-  })
-};
-
-// call animation when header button is hit
-headerButton.addEventListener('click', () => {
-  fadeInOnScroll.call(aboutPage)
 })
+
+
+// // call animation when header button is hit
+

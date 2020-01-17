@@ -15,13 +15,12 @@
   src: url(/fonts/OpenSans-Light.otf);
 }
 
-/*  secondary shade yellowt
+/*  darker shade yellow
 #F7EB22
 lighter yellow
 #FFFD7A
-brighter yellow
+default yellow
 #FEF223
-
 */
 
 body {
@@ -46,6 +45,10 @@ h5 {
   color: white;
   font-size: 18pt;
   font-family: "AkkuratProLight";
+}
+
+.navbar-brand:hover {
+  color: #fffd7a;
 }
 
 .navbar {
@@ -386,6 +389,22 @@ footer h4 {
   margin: 0 0 0 1.5rem;
   font-size: 18pt;
   color: white;
+}
+
+/* animations */
+.fadeInOnScroll {
+  animation: fade-in 1s ease forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-80px);
+  }
 }
 
 .icons a i:hover {
