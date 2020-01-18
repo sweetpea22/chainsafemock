@@ -15,7 +15,7 @@
   src: url(/fonts/OpenSans-Light.otf);
 }
 
-/*  darker shade yellow
+/*  darker yellow
 #F7EB22
 lighter yellow
 #FFFD7A
@@ -143,7 +143,7 @@ h5 {
   margin: 20px 0;
 }
 
-/* about mock */
+/* about */
 
 #about {
   height: 10vh;
@@ -482,6 +482,7 @@ footer h4 {
   }
 }
 
+/* tablet and small laptop */
 @media only screen and (max-width: 1150px) {
   .jumbotron {
     height: 60vh;
@@ -544,7 +545,8 @@ footer h4 {
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+/* ipad pro */
+@media only screen and (min-width: 1020px) and (max-width: 1200px) {
   .work__card {
     margin: 2vh 0 0 4vw;
   }
@@ -553,11 +555,12 @@ footer h4 {
   }
   .footer {
     height: auto;
-    position: absolute;
+    position: fixed;
     top: 190%;
   }
 }
 
+/* up to pixel 2 XL and iphone 8 plus */
 @media only screen and (max-width: 430px) {
   .jumbotron {
     height: 100vh;
@@ -620,6 +623,7 @@ footer h4 {
   }
 }
 
+/* galaxy s5, iphone 5s */
 @media only screen and (max-width: 340px) {
   .jumbotron {
     width: 100vw;

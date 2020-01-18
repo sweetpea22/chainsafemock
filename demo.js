@@ -1,7 +1,6 @@
 // api call to pinned repos 
-const key = "?username=chainsafe"
-const url = `https://gh-pinned-repos.now.sh/${key}`
-
+const name = "?username=chainsafe";
+const url = `https://gh-pinned-repos.now.sh/${name}`;
 const htmlWrapper = document.querySelector('.projects .row');
 
 
@@ -36,29 +35,18 @@ getPinnedRepos()
   })
   .catch(err => console.error(err));
 
-// animations // 
+// animations 
 
 const aboutPage = document.querySelector('.about--wrapper'),
   headerButton = document.querySelector('.header__coa'),
-  aboutColumns = document.querySelectorAll('.about_col'),
-  projectsPage = document.querySelectorAll('.projects.row'),
-  projectsCards = document.querySelectorAll('.work__card');
+  aboutColumns = document.querySelectorAll('.about_col');
 
-
-// aboutPage.offsetHeight
 window.addEventListener('scroll', () => {
   const scrolled = window.scrollY;
   if (scrolled >= (headerButton.offsetHeight)) {
+
     aboutColumns.forEach(col => {
       col.classList.add('fadeInOnScroll');
     })
-  } else if (scrolled >= projectsPage.offsetHeight) {
-    projectsCards.forEach(card => {
-      card.classList.add('fadeInOnScroll');
-    })
   }
 })
-
-
-// // call animation when header button is hit
-
